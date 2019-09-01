@@ -1,12 +1,23 @@
 'use strict';
 
 /**
- * Implement numberReducer with 3 actions:
- * 1. increase
- * 2. decrease
- * 3. clear
+ * Implement `numberReducer` with 3 actions:
+ * 1. `increase`
+ * 2. `decrease`
+ * 3. `clear`
  *
  * If action not declared, it should return actual state.
+ * Remember that we need to create the `initialState`.
+ *
+ * Example 1: `numberReducer(state, action) === newState`
+ * state === { count: 0 }
+ * action === { type: 'increase' };
+ * newState === { count: 1 };
+ *
+ * Example 2: `numberReducer(state, action) === newState`
+ * state === { count: 6 }
+ * action === { type: 'unknown' };
+ * newState === { count: 6 };
  *
  * @param {number} state
  * @param {object} action

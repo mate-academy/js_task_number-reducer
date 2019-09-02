@@ -7,7 +7,7 @@
  * 3. `clear`
  *
  * If action not declared, it should return actual state.
- * Remember that we need to create the `initialState`.
+ * Remember that it is necessary to set initial value for the state.
  *
  * Example 1: `numberReducer(state, action) === newState`
  * state === { count: 0 }

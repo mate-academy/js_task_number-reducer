@@ -9,15 +9,12 @@
  * If action not declared, it should return actual state.
  * Remember that it is necessary to set initial value for the state.
  *
- * Example 1: `numberReducer(state, action) === newState`
- * state === { count: 0 }
- * action === { type: 'increase' };
- * newState === { count: 1 };
+ * Examples:
+ * 1. numberReducer({ type: 'increase' }) === 1
+ * 2. numberReducer(9, { type: 'decrease' } === 8
+ * 3. numberReducer(3, { type: 'clear' }) === 0
+ * 4. numberReducer(10, { type: 'unknown' }) === 10
  *
- * Example 2: `numberReducer(state, action) === newState`
- * state === { count: 6 }
- * action === { type: 'unknown' };
- * newState === { count: 6 };
  *
  * @param {number} state
  * @param {object} action

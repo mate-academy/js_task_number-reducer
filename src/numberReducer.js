@@ -10,7 +10,7 @@
  * Remember that it is necessary to set initial value for the state.
  *
  * Examples:
- * 1. numberReducer({ type: 'increase' }) === 1
+ * 1. numberReducer(0, { type: 'increase' }) === 1
  * 2. numberReducer(9, { type: 'decrease' } === 8
  * 3. numberReducer(3, { type: 'clear' }) === 0
  * 4. numberReducer(10, { type: 'unknown' }) === 10

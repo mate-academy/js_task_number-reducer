@@ -3,7 +3,7 @@
 const numberReducer = require('./numberReducer');
 
 test('reducer should increase the number (0 => 1)', () => {
-  expect(numberReducer({ type: 'increase' }))
+  expect(numberReducer(0, { type: 'increase' }))
     .toBe(1);
 });
 
